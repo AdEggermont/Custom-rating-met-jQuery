@@ -1,0 +1,31 @@
+/* 
+	Custom rating demo
+	Ad Eggermont
+	http://adeggermont.be 
+*/
+
+#score {
+	display: none;
+	overflow: hidden;
+	list-style: none;
+}
+
+	#score li {
+		float: left;
+	}
+
+	#score li a {
+		display: block;
+		width: 25px;
+		height: 32px;
+		padding: 0 5px 0 0;
+		background: url('rating_icon.png') no-repeat bottom left;
+		text-indent: -9999em;
+		overflow: hidden;
+		border: 0;
+	}
+        
+	#score li.hover a,
+	#score li.selected a {
+		background-position: top left;
+	}
